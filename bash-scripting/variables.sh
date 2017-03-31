@@ -25,6 +25,3 @@
     #4:
       format=`date +%Y-%m-%d`
       cp ../bar.txt ${format}bar.txt
-
-    #5:
-      

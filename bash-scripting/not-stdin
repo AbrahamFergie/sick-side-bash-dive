@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'Here is some line from somewhere:'
+
+cat /dev/stdin | sort
