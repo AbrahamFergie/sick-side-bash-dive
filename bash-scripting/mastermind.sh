@@ -3,6 +3,8 @@
 #Mastermind:
 
 echo -e '\x1B[4;36mWelcome to Mastermind\x1B[0m'
+  declare -a marbles
+  marbles=( $redMarb $orangeMarb $yellowMarb $greenMarb $lightBlueMarbb $blueMarb $indigoMarb $violetMarb )
   guessNum=1
   redMarb='r'
   orangeMarb='o'
@@ -17,7 +19,12 @@ echo -e '\x1B[4;36mWelcome to Mastermind\x1B[0m'
   newLine='\n'
 
   answer=( $redMarb $orangeMarb $yellowMarb $greenMarb $lightBlueMarb )
-
+  function_generateSolution () {
+    min=0
+    max=7
+    while [  ]
+    echo 'this stuff'${marbles[*]}
+  }
   function_turn () {
     echo -n 'Place your guess accordingly: '
     read userGuess
@@ -71,6 +78,7 @@ echo -e '\x1B[4;36mWelcome to Mastermind\x1B[0m'
     fi
   }
   function_sequence () {
+    function_generateSolution
     while [ $guessNum -lt 9 ]
     do
       echo -e '\x1B[0;33mthe answer has been randomly generated\x1B[0m'
