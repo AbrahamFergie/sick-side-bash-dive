@@ -19,12 +19,6 @@ echo -e '\x1B[4;36mWelcome to Mastermind\x1B[0m'
   newLine='\n'
 
   answer=( $redMarb $orangeMarb $yellowMarb $greenMarb $lightBlueMarb )
-  function_generateSolution () {
-    min=0
-    max=7
-    while [  ]
-    echo 'this stuff'${marbles[*]}
-  }
   function_turn () {
     echo -n 'Place your guess accordingly: '
     read userGuess
